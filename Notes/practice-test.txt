@@ -1,0 +1,34 @@
+1.What is the log based 2 of 130,000,000
+2. what is log basee 4 of 1,000,000
+3. Assume a cit password must be exactly 9 characters. The first 3 characters must be a lowercase letter. The next 3 may be lower case letters or upper case letters. The last 3 must be one of the ten digits. How many different password poassibilities are there? (Don't do the math- just write the formula)
+
+4. What is big O analysis?
+	Big o analysis is the study of how work increases as problem size increases.
+5. When is big o analysis not important?
+	when you deal with small data samples. 
+
+7. List 5 big o categories, and an algorithm that fits into each. 
+8. Show what happens to this array on one pass of the quicksort. Use the 4 on the far left as the pivot. and use the same algorithm we studied in class.
+original array: 4 7 2 1 8 3 9 5
+
+9. Fill out this table with correct big-o categories
+				expected case  worse case   best case
+Shaker sort
+Quick sort
+Merge
+10. If you are trying to speed up code that is running slowly, where is the bottle neck code likely to be?
+	Where the worst big o is. 
+11. What happens to overall speed of excution if you make all the code that is not the bottlenekc code go 1000 times faster?
+	Doesn't change the speed of the code that much.
+12. Why is it more likely that Factoring might be solved in polynomial time that SAT?
+	Because it hasn't been proven NP complete.
+
+15. Convert this infix expression to postifx: 2*(3+4/5*6)/(9-4+3/2)*8
+16 Evaluate this postfix expression: 123*+4-6*82
+
+17. Write python code that finds a prints the average age of all students in the python list names "allstudents". Assum "allstudents" is ready to go. 
+	Don't use traverse method, but loop through the list ourselves.
+18. Write python code for the IsEmpty method of your stack class.
+(will not be asked to reproduce infixtopostfix. Won't ask to reproduce evaluate postfix. Won't ask to reproduce quicksort entirely. Won't ask to reproduce mergesort in entirety)
+
+linked lists are going to be on the tests. 

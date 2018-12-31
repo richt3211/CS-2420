@@ -1,0 +1,48 @@
+Talking about BST Delete
+
+class BST:
+
+def __init__(self):
+	self.mRoot = None
+def insert(self,item):
+	if self.Exists(item):
+		return False
+	self.mRoot = self.InsertR(self.mRoot)
+	return True
+def insertR(self,item,current):
+	if current is None:
+		n=Node(item)
+		current = n
+	elif item < current.mItem:
+		current.mLeft = self.InsertR(item, Current.mLeft)
+	else:
+		current.mRight = self.insertR(item, current.mRight)
+	return current
+
+
+def Delete(self, dummy):
+	if not self.Exists(dummy):
+		return False
+	self.mRoot = self.DeleteR(dummy, self.mRoot)
+	return True
+
+def DeleteR(self, dummy, current):
+	if dummy < current.mItem:
+		current.mLeft = self.DeleteR(dummy, current.mLeft)
+	elif dummy > current.mItem:
+		current.mRight = self.DeleteR(dummy, current.mRight)
+	else: #if we are at the correct item to delete, then check the different cases for deletion
+		if current.mLeft is None and current.mRight is None: # no child case
+			current = None
+		elif current.mLeft is None #one right child
+			current = current.mRight
+		elif current.mRight is None #one left child
+			current = current.mLeft
+		else: #two children
+			s = current.mRight # s is the in order successor
+			while s.mLeft is not None:
+				s = s.mLeft
+			current.mItem = s.mItem
+			current.mRight = self.DeleteR(s, current.mRight)
+	return current
+

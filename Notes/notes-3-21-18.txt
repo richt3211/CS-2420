@@ -1,0 +1,58 @@
+class BST:
+
+def exists(self, item):
+	return existsR(self.mRoot, item)
+
+def existsR(self, current, item):
+	if current is None:
+		return False
+	if current.mItem = item:
+		return True
+	if item > current.mItem:
+		return existsR(current.mRight, item)
+	if item < current.mItem:
+		return existsR(current.mLeft, item)
+
+def retrieve(self,dummy)
+	return self.retrieveRecursive(dummy, self.mRoot)
+
+def retriveRecursive(self, dummy, node)
+	if node is None:
+		return None
+	elif node.item == dummy:
+		return node.item
+	elif node.item > dummy:
+		return self.retrieveRecursive(dummy, node.mLeft)
+	else:
+		return self.retrieveRecursive(dummy, node.mRight)
+
+def traverse(self, callback):
+	self.traverseR(self.mRoot, callback)
+def traverseR(self,current, callback):
+	if current:
+		self.traverseR(current.mLeft, callback)
+		self.traverseR(current.mRight, callback)
+		callback(current.mItem)
+	return
+
+def countNodes(self):
+	if self.mRoot is None:
+		return 0
+	count = 0
+	count = self.countNodeR(self.mRoot, count)
+	return count
+
+def countNodesR(self):
+	count = self.countNodesR(self, current.mLeft, count)
+	count = countNodesR(self, current.mRight, count)
+	count += 1
+	return count
+
+#barts code
+def countNodes(self):
+	return self.countR(self.mRoot)
+
+def countR(self, current):
+	if current is None:
+		return 0
+	return 1 + self.countR(current.mLeft) + self.countR(current.mRight)

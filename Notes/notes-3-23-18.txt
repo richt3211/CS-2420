@@ -1,0 +1,22 @@
+avl - balanced
+2-3 - full
+2-3-4 - full
+100
+heap - complete
+
+gTOTAL_AGE = 0
+def AddAges(s):
+	global gTOTAL_AGE
+	gTOTAL_AGE += int(s.getAge())
+
+
+def main():
+	students = bst.uuc()
+	#insert
+	.
+	.
+	.
+	.
+	students.Travers(AddAges)
+	print ("Avg age of student is" gTOTAL_AGE / students.size())
+	

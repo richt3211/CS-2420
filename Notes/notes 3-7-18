@@ -1,0 +1,21 @@
+linked list:
+	mFront
+
+class BST:
+
+def __init__(self):
+	self.mRoot = None
+def insert(self,item):
+	if self.Exists(item):
+		return False
+	self.mRoot = self.InsertR(self.mRoot)
+	return True
+def insertR(self,item,current):
+	if current is None:
+		n=Node(item)
+		current = n
+	elif item < current.mItem:
+		current.mLeft = self.InsertR(item, Current.mLeft)
+	else:
+		current.mRight = self.insertR(item, current.mRight)
+	return current
